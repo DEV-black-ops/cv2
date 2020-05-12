@@ -19,14 +19,14 @@ if k == 26:  #right arrow key
     value = 10
     cv2.add(hsv[:,:,2], value, hsv[:,:,2])
     image = cv2.cvtColor(hsv, cv2.COLOR_HSV2BGR)
-    cv2.imwrite('out.png', image)
+    cv2.imwrite('out.jpg', image)
     
 elif k == 27: # left arrow key
     hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
     value = 10
     cv2.sub(hsv[:,:,2], value, hsv[:,:,2])
     image = cv2.cvtColor(hsv, cv2.COLOR_HSV2BGR)
-    cv2.imwrite('out.png', image)
+    cv2.imwrite('out.jpg', image)
    
 
 
